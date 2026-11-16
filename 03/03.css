@@ -1,0 +1,43 @@
+:root {
+  --color-zuria: white;
+  --color: #333;
+}
+
+nav {
+  display: grid;
+  background-color: var(--color);
+  padding: 1rem;
+}
+
+.active {
+  color: var(--color);
+  background-color: var(--color-zuria);
+}
+
+#logo #menu {
+  display: flex;
+  justify-content: left;
+  
+}
+#logo{
+  color: var(--color-zuria);
+  font-size: large;
+  font-weight: bold;
+}
+
+#search {
+  display: flex;
+  justify-content: right;
+  align-content: start;
+}
+
+@media (orientation: portrait) {
+  #logo #search {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+}
