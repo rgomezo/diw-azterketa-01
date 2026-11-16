@@ -1,0 +1,25 @@
+:root {
+    --color-zuria: white;
+    --color: #333;
+}
+
+nav {
+    display: flex;
+    background-color: var(--color);
+    padding: 1rem;
+}
+
+.active {
+    color: var(--color);
+    background-color: var(--color-zuria);
+}
+
+#menu {
+    flex: auto;
+    float: left;
+}
+
+#search {
+    flex: auto;
+    float: right;
+}

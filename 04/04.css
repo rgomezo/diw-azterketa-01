@@ -1,0 +1,49 @@
+.layout {
+    display: grid;
+}
+
+aside {
+    width: max (250px);
+    grid-column: 1;
+}
+
+main {
+    grid-column: 2;
+}
+
+.producto {
+    display: grid;
+    gap: 1rem;
+    width: min(210px);
+    height: 140px;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.productos {
+
+}
+
+@media (max-width: 1200px) {
+    .producto {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 990px) {
+    .producto{
+        display: grid;
+        grid-template-columns: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .producto {
+        display: grid;
+        grid-template-columns: 1;
+    }
+    
+}
+
