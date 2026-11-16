@@ -29,11 +29,11 @@ a {
 }
 
 .cabecera nav {
-    display: flex;
-    flex: 1;
     gap: 1.75rem;
     color: #d7d9e2;
     font-size: 0.95rem;
+    text-align: center;
+    gap: initial;
 }
 
 .cabecera nav a:hover,
@@ -71,6 +71,8 @@ a {
     border-radius: 18px;
     background-color: #fff;
     box-shadow: 0 12px 40px rgb(36 45 67 / 7%);
+    display: grid;
+    grid-template-columns: 2fr, 2fr;
 }
 
 .producto_imagen img {
@@ -86,6 +88,19 @@ a {
     line-height: 1.18;
 }
 
+button.boton-compra{
+    background-color:#ff9a67;
+}
+
+
+@media (max-width:760px){
+nav{
+    display: none;
+    
+}
+
+
+}
 
 
 
