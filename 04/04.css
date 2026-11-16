@@ -1,0 +1,40 @@
+.contenido {
+    display: grid;
+
+
+    grid-template-columns: repeat(3, 1fr);
+
+
+    gap: 25px;
+
+}
+
+
+.producto {
+    background-color: white;
+    padding: 40px;
+
+    border: 1px solid #dddddd;
+
+
+    border-radius: 12px;
+
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+    .contenido {
+        grid-template-columns: 1fr;
+
+    }
+}

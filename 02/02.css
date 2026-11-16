@@ -1,0 +1,75 @@
+.etiqueta {
+    color: #000000;
+
+
+    font-size: 13px;
+
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.tarjeta {
+    background-color: white;
+
+
+    border: 1px solid #000000;
+
+
+    border-radius: 12px;
+
+
+
+}
+
+
+
+
+.tarjeta img {
+    width: 10%;
+
+
+    height: 220px;
+
+
+}
+
+
+
+
+.tarjeta-contenido {
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+.precio {
+    display: block;
+
+
+    color: #000000;
+
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+
+    margin-top: 15px;
+
+}
