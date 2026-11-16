@@ -1,0 +1,26 @@
+
+#titulo {
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.tarjeta {
+  display: flex;
+  border: 1px solid #e20000;
+  width: 250px;
+  height: 350px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.etiqueta {
+}
+
+.precio {
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
