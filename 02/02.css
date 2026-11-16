@@ -1,0 +1,14 @@
+.tarjeta { 
+    width: 250px;
+    height: 350px;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.etiqueta{
+    background-color:red;
+    display:flex;
+    align-self:center;
+    
+}
