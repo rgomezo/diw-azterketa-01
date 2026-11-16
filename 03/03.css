@@ -1,0 +1,40 @@
+:root {
+  --colorA: #333;
+  --colorB: white;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--colorA);
+  gap: 20px;
+}
+
+#logo {
+  color: var(--colorB);
+  font-size: 25px;
+}
+
+#menu {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.active {
+  color: var(--colorA);
+  background-color: var(--colorB);
+  border-radius: 5px;
+}
+
+a {
+  color: var(--colorB);
+  text-decoration: none;
+}
+
+@media (min-width < 768) {
+  #logo,
+  #search {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 10px;
+}
+
+.tarjeta {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin-right: 158px;
+}
+
+h2 {
+  text-align: left;
+}
+
+.precio {
+  text-align: right;
+  gap: 20px;
+}
