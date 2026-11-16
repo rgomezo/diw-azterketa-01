@@ -1,0 +1,57 @@
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+body { 
+    margin: 0; 
+    font-family: system-ui, Arial, sans-serif; 
+}
+
+
+header { 
+    grid-area: cabecera; 
+    background: #0c263f; 
+    color: #fff; 
+    padding: 1rem; 
+}
+
+aside  { 
+    grid-area: lateral;  
+    background: #f1f3f5; 
+    padding: 250px; 
+}
+
+main   { 
+    grid-area: productos; 
+    padding: 1.5rem; 
+}
+
+.layout { 
+    
+    display: grid; 
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 'productos' 'categorias';
+    grid-template-rows: auto auto 1fr auto; 
+
+
+}
+
+.productos{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 210px;
+    height: 140px;
+    padding: 2rem;
+    border: solid black;
+    
+}
+
+
+@media (min-width: 768px) {
+  .pagina { grid-template-columns: 220px 1fr;
+            grid-template-areas: 'productos productos';
+            grid-template-rows: auto 1fr auto; }
+  aside { position: sticky; top: 0; align-self: start; height: 100vh; } 
+  aside nav { flex-direction: column; }
+}
