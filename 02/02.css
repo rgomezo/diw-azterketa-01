@@ -1,0 +1,30 @@
+.tarjeta {
+    width: 250px;
+    height: 350px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+.tarjeta h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+
+.tarjeta img {
+    width: 100%;
+    align-items: center;
+}
+
+.precio {
+    margin: 0 10px 20px 0px;
+    text-align: right;
+}
+
+.etiqueta {
+    align-items: start;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
