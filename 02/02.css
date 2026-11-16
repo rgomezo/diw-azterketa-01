@@ -1,0 +1,39 @@
+.tarjeta {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.tarjeta img {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: contain;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tarjeta h2{
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+.precio {
+    text-align: right;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}

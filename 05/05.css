@@ -20,6 +20,10 @@ a {
 }
 
 .cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     gap: 2rem;
     min-height: 76px;
     padding: 1rem max(5vw, 1.5rem);
@@ -46,6 +50,9 @@ a {
     font-weight: 800;
 }
 
+.marca span {
+    color: orange;
+}
 
 
 .carrito {
@@ -55,6 +62,17 @@ a {
     font-weight: 700;
 }
 
+.carrito span {
+    background-color: #ff9a67;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
 
 
 .contenedor {
@@ -64,6 +82,7 @@ a {
 }
 
 .producto {
+    display: flex;
     align-items: center;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -71,6 +90,13 @@ a {
     border-radius: 18px;
     background-color: #fff;
     box-shadow: 0 12px 40px rgb(36 45 67 / 7%);
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
 }
 
 .producto_imagen img {
@@ -86,8 +112,71 @@ a {
     line-height: 1.18;
 }
 
+.precio {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    margin: 1rem 0;;
+}
 
+.valoracion {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
 
+.valoracion > span:first-child {
+    color: #ff9a67;
+    font-size: 1.2rem;
+}
+
+.opiniones {
+    color: gray;
+    font-size: 0.85rem;
+}
+
+.caracteristicas {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.caracteristicas li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+    color: gray;
+}
+
+.boton-compra {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #ff9a67;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.boton-compra:hover {
+    background-color: #ff9a67;
+}
+
+@media (max-width: 750px) {
+    .cabecera nav {
+        display: none;
+    }
+
+    .producto {
+    grid-template-columns: 1fr;
+    }
+
+    .producto_imagen img {
+        max-height: 300px;
+    }
+}
 
 
 
