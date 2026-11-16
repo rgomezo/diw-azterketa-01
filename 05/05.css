@@ -49,6 +49,8 @@ header {
   gap: 1.75rem;
   color: var(--gris);
   font-size: 0.95rem;
+  margin-left: 255px;
+  margin-top: 4px;
 }
 
 .cabecera nav a:hover,
@@ -144,13 +146,14 @@ header {
   color: var(--gris);
 }
 
-@media (min-width < 760) {
+@media (max-width < 760) {
   .producto {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 
-  nav {
+  .cabecera > nav {
     display: none;
   }
 }
