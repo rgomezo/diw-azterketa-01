@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+#logo {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+#menu {
+    display: flex;
+    gap: 0.5rem;
+}
+#menu a {
+    color:white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#menu a.active{
+    background: white;
+    color: #333;
+}
+
+#search{
+    margin-left: auto;
+}
+
+
+@media (max-width: 767px) {
+    #logo {
+        display: none;
+    }
+    #search {
+        display: none;
+    }
+}
+
+#menu {
+    width: 100%;
+    justify-content: space-evenly;
+}
