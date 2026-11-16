@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.cabecera {
+    background-color: rgb(44, 44, 173);
+    color:white;
+}
+
+ .categorias li{
+    padding:0.4
+    
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 2fr 3fr ;
+    gap: 1px;
+    padding:1%;
+}
+
+.main {
+    display:grid;
+    grid-template-columns: 4fr, ;
+
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    gap: 1rem;
+      
+
+}
+
+article.producto{
+   border: 1px solid #000000;
+   border-radius: 10px;
+}
+
+.categorias ul{
+    margin-top: 0;
+}
+
+li{
+border: 1px solid #000000;
+   border-radius: 10px;
+}

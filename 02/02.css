@@ -1,0 +1,32 @@
+.tarjeta{
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+}
+
+.etiqueta{
+    background: red;
+    border-radius:5px;
+    align-items:left;
+    top: 10px;
+    left:10px;
+    color:white;
+    width: 10px;
+
+}
+
+.tarjeta img {
+width: 150px;
+height: 250px;
+}
+
+.tarjeta h2 {
+    text-align: left;
+}
+
+.tarjeta p {
+    text-align: right;
+}
+

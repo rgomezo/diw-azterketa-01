@@ -1,0 +1,41 @@
+body nav {
+    background-color: #333 ;
+    display:flex;
+    align-items: center;
+    padding:1rem;
+}
+
+nav #logo{
+    color:white;
+}
+
+div #search {
+    justify-content: flex-end;
+
+}
+
+a.active {
+    border-radius: 1.5px;
+    background-color: white ;
+    color: black;
+}
+a {
+    color:white;
+
+}
+
+nav{
+   display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+
+@media (max-width:768px){
+#logo, #search{
+    display: none;
+}
+
+
+}
