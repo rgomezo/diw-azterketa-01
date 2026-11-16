@@ -1,0 +1,13 @@
+.layout {
+    display:grid;
+    grid-template-columns: 120px;
+}
+
+.categorias{
+    height:250px;
+}
+
+.producto{
+    min-width: 210px;
+    
+}

@@ -5,8 +5,9 @@
 }
 
 :root {
-    color: #171b2b;
-    background-color: rgb(240, 238, 238);
+    --urdina: #171b2b;
+    --zuria: rgb(240, 238, 238);
+    --sombra:rgb(23 27 43 / 18%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,16 +24,16 @@ a {
     gap: 2rem;
     min-height: 76px;
     padding: 1rem max(5vw, 1.5rem);
-    background-color: #171b2b;
-    color: #fff;
-    box-shadow: 0 3px 12px rgb(23 27 43 / 18%);
+    background-color: var(--urdina);
+    color: var(--zuria);
+    box-shadow: 0 3px 12px var(--sombra);
 }
 
 .cabecera nav {
     display: flex;
     flex: 1;
     gap: 1.75rem;
-    color: #d7d9e2;
+    color: var;
     font-size: 0.95rem;
 }
 
