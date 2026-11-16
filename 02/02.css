@@ -1,0 +1,23 @@
+.tarjeta{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.etiqueta{
+    position: absolute;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: left;
+}
+
+.precio {
+    text-align: right;
+    margin-right: 20px;
+}
+
