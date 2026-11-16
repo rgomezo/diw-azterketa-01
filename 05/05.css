@@ -5,6 +5,15 @@
 }
 
 :root {
+    --color-primario: #171b2b;
+    --color-secundario: #ff9a67;
+    --color-fondo: rgb(240, 238, 238);
+    --color-texto: #171b2b;
+    --color-blanco: #ffffff;
+    --color-gris: #d7d9e2;
+    --sombra-header: 0 3px 12px rgb(23 27 43 / 18%);
+    --sombra-producto: 0 12px 40px rgb(36 45 67 / 7%);
+    --radio-producto: 18px;
     color: #171b2b;
     background-color: rgb(240, 238, 238);
     font-family: Arial, Helvetica, sans-serif;
@@ -20,33 +29,32 @@ a {
 }
 
 .cabecera {
+    display: flex;
     gap: 2rem;
     min-height: 76px;
     padding: 1rem max(5vw, 1.5rem);
-    background-color: #171b2b;
-    color: #fff;
-    box-shadow: 0 3px 12px rgb(23 27 43 / 18%);
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    box-shadow: var(--sombra-header);
 }
 
 .cabecera nav {
     display: flex;
     flex: 1;
     gap: 1.75rem;
-    color: #d7d9e2;
+    color: var(--color-gris);
     font-size: 0.95rem;
 }
 
 .cabecera nav a:hover,
 .carrito:hover {
-    color: #ff9a67;
+    color: var(--color-secundario);
 }
 
 .marca {
     font-size: 1.5rem;
     font-weight: 800;
 }
-
-
 
 .carrito {
     display: flex;
@@ -55,8 +63,6 @@ a {
     font-weight: 700;
 }
 
-
-
 .contenedor {
     width: min(1120px, calc(100% - 3rem));
     margin: 0 auto;
@@ -64,13 +70,16 @@ a {
 }
 
 .producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: center;
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid #fff;
-    border-radius: 18px;
-    background-color: #fff;
-    box-shadow: 0 12px 40px rgb(36 45 67 / 7%);
+    border: 1px solid var(--color-blanco);
+    border-radius: var(--radio-producto);
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra-producto);
 }
 
 .producto_imagen img {
@@ -86,8 +95,54 @@ a {
     line-height: 1.18;
 }
 
+.valoracion {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+.opiniones {
+    color: #777;
+    font-size: 0.9rem;
+}
 
+.caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+}
 
+.caracteristicas li {
+    position: relative;
+    padding-left: 1.25rem;
+}
 
+.caracteristicas li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
 
+.precio {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #171b2b;
+}
+
+.boton-compra {
+    background-color: #ff9a67;
+    color: #171b2b;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .producto {
+        grid-template-columns: 1fr;
+    }
+}
