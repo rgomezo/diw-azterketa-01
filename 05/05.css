@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {                               
+  --azul-oscuro: #171b2b;                
+  --naranja: #ff9a67;        
+  --cabecera-nav: #d7d9e2;;            
+  --fondo: #121110;                   
+  --texto: #2b2623;                  
+  --blanco: #fff;      
+  --gris: #aca7a7;             
+}
+
 :root {
-    color: #171b2b;
-    background-color: rgb(240, 238, 238);
+    color: var(--azul-oscuro);
+    background-color: var(--blanco);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,27 +33,28 @@ a {
     gap: 2rem;
     min-height: 76px;
     padding: 1rem max(5vw, 1.5rem);
-    background-color: #171b2b;
-    color: #fff;
-    box-shadow: 0 3px 12px rgb(23 27 43 / 18%);
+    background-color: var(--fondo-cabecera);
+    color:var(--naranja);
+    box-shadow: 0 3px 12px var(--azul-oscuro);
 }
 
 .cabecera nav {
     display: flex;
     flex: 1;
     gap: 1.75rem;
-    color: #d7d9e2;
+    color: var(--carrito);
     font-size: 0.95rem;
 }
 
 .cabecera nav a:hover,
 .carrito:hover {
-    color: #ff9a67;
+   color: var(--naranja);
 }
 
 .marca {
     font-size: 1.5rem;
     font-weight: 800;
+    color:blue;
 }
 
 
@@ -53,7 +64,14 @@ a {
     align-items: center;
     gap: 0.6rem;
     font-weight: 700;
+    border-radius: 90%;
+    padding: 20px;
+    text-align: center;
+   width: 150px;        /* ancho fijo */
+  aspect-ratio: 1;     /* alto = ancho, así la caja es un cuadrado */
+
 }
+
 
 
 
@@ -67,10 +85,10 @@ a {
     align-items: center;
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--blanco);
     border-radius: 18px;
-    background-color: #fff;
-    box-shadow: 0 12px 40px rgb(36 45 67 / 7%);
+    background-color: var(--blanco);
+    box-shadow: 0 12px 40px var(--azul-oscuro);
 }
 
 .producto_imagen img {
@@ -87,7 +105,38 @@ a {
 }
 
 
+.boton-compra{
+    background-color: var(--naranja);
+    border-radius: 5px;
+    padding: 2px 500px;
+}
+.carrito {
+    align-items: right;
+}
 
+.precio{
+    font-size: 30px;
+}
+.valoracion {
+    color:var(--naranja); 
+}
+.opiniones{
+    font-size: 12px;
+    color:var(--gris);
+}
+
+.producto_info, .producto_imagen {
+    grid-template-columns: 2fr 1fr
+   }
+
+@media (max-width: 760px){
+     .cabecera nav{
+         display: none; 
+    }
+     .producto_imagen,.producto_info {
+        grid-template-columns: 1fr ;
+    }
+    }
 
 
 
